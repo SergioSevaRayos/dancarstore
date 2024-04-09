@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Contacto</h1>
+    <form action="https://formspree.io/sergiosevarayos@gmail.com" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <input type="email" name="_replyto" placeholder="Tu correo electrónico">
+        <input type="hidden" name="_next" value="URL_de_Redirección">
+        <label for="product">Producto de interés:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Selecciona un producto</option>
+            <!-- Opciones de productos se generarán dinámicamente aquí -->
+        </select><br><br>
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script src="products.js"></script>
+    <script>
+        // Cargar lista de productos y generar opciones del desplegable
+        window.addEventListener('DOMContentLoaded', function() {
+            const productDropdown = document.getElementById('product');
+
+            // Iterar sobre la lista de productos y agregar opciones al desplegable
+            products.forEach(function(product) {
+                const option = document.createElement('option');
+                option.value = product.name;
+                option.textContent = product.name;
+                productDropdown.appendChild(option);
+            });
+        });
+    </script>
+</body>
+</html>
