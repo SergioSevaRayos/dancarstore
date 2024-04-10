@@ -1,0 +1,21 @@
+Nombre de mascotas para pulseras
+    Max
+    Bella
+    Charlie
+    Luna
+    Cooper
+    Daisy
+    Rocky
+    Lucy
+    Buddy
+    Molly
+    Bailey
+    Sadie
+    Toby
+    Maggie
+    Jack
+    Chloe
+    Duke
+    Rosie
+    Oliver
+    Zoey

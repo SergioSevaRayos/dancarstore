@@ -1,6 +1,6 @@
 const products = [
-    { name: 'Mochila Unicornio', price: '$20', description: 'Mochila con diseño de unicornio.' },
-    { name: 'Estuche de lápices', price: '$8', description: 'Estuche con varios lápices de colores.' },
+    { name: 'Pulsera Charlie', price: '2 €', description: 'Pulsera con perlas.' },
+    { name: 'Pulsera Max', price: '3 €', description: 'Pulsera de acero.' },
     { name: 'Lonchera Dinosaurio', price: '$15', description: 'Lonchera con diseño de dinosaurio.' },
     // Puedes añadir más productos aquí
 ];
